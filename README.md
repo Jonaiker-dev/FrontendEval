@@ -1,27 +1,27 @@
-# FrontendEval
+# Reactive-Form Component
+### En el componente `reactive-forms` tenemos 2 tipos de Submit:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+|  Submit | Descripcion |
+|---|---|
+| `SendData()` | **Muestra los Datos por consola**|
+| `AddProduct()` |  **Agrega el producto a la API de productos**|
 
-## Development server
+--- 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# EVALUACION DE PERSONAL
+## 1. Formulario Reactivo:
+### Crea un formulario reactivo en Angular con los siguientes campos:
+- `Nombre`: Obligatorio y con un máximo de 50 caracteres.
+- `Precio`: Obligatorio y debe ser un número mayor a 0. 
+### Requerimientos:
+- Muestra un mensaje de error si el usuario no llena un campo obligatorio.
+- Al enviar el formulario, muestra los datos ingresados en la consola. 
+## 2. Consumo de API:
+### Implementa un servicio en Angular que consuma el endpoint `/api/productos` del ejercicio anterior y muestre los productos en una tabla.
+### Requerimientos:
+- Usa `HttpClient` para realizar la solicitud.
+- Muestra los productos en una tabla con columnas para `ProductoID`, `Nombre`, y
+`Precio`.
+## 3. Componente Interactivo:
+### Crea un componente que tenga un botón. Al hacer clic en el botón, cambia el color de fondo del componente de blanco a azul (y viceversa en clics consecutivos). 
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
